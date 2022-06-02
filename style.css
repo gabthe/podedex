@@ -9,9 +9,6 @@ a {
     text-decoration: none;
     color: black;
 }
-button {
-    border: 0px;
-}
 
 main {
     min-width: 320px;
@@ -77,6 +74,7 @@ footer {
     font-size: 1rem;
     color: grey;
     width: 30vw;
+    padding: 8px;
 }
 
 #social-media {
@@ -118,7 +116,11 @@ nav>div {
     width: 40vw;
 }
 
-.selecao>button {
+.selecao>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 100%;
     height: 100%;
     font-size: 0.75rem;
@@ -143,7 +145,7 @@ nav>div {
 }
 
 #home {
-    box-shadow: 0px 5px grey;
+    border-bottom: 5px solid grey;
     border-radius: 10% 0% 0% 10%;
 }
 
@@ -156,7 +158,7 @@ nav>div {
 }
 
 #pokedex {
-    box-shadow: 0px 5px orangered;
+    border-bottom: 5px solid orangered;
 }
 
 #video-game:hover{
@@ -167,7 +169,7 @@ nav>div {
 }
 
 #video-game {
-    box-shadow: 0px 5px rgb(255, 140, 0);
+    border-bottom: 5px solid rgb(255, 140, 0);
 }
 
 #trading-card:hover{
@@ -178,7 +180,7 @@ nav>div {
 }
 
 #trading-card {
-    box-shadow: 0px 5px orange;
+    border-bottom: 5px solid orange;
 }
 
 #pokemon-tv:hover{
@@ -189,7 +191,7 @@ nav>div {
 }
 
 #pokemon-tv {
-    box-shadow: 0px 5px green;
+    border-bottom: 5px solid green;
 }
 
 #pokemon-events:hover{
@@ -200,7 +202,7 @@ nav>div {
 }
 
 #pokemon-events {
-    box-shadow: 0px 5px dodgerblue;
+    border-bottom: 5px solid dodgerblue;
 }
 
 #news:hover {
@@ -211,7 +213,7 @@ nav>div {
 }
 
 #news {
-    box-shadow: 0px 5px blue;
+    border-bottom: 5px solid blue;
     border-radius: 0% 10% 10% 0%;
 }
 
@@ -301,9 +303,8 @@ main {
     justify-content: center;
     row-gap: 1vh;
     column-gap: 1vw;
-    margin: 0vh 24vw;
-    padding: 1vh 1vw;
-    background-color: white;
+    padding: 1vh 24vw;
+    background: linear-gradient(rgb(255, 98, 0), rgb(80, 80, 80));
 }
 
 .card>img {
@@ -317,7 +318,8 @@ main {
 
 
 .card {
-    box-shadow: 3px 3px darkgray;
+    background-color: white;
+    box-shadow: 2px 2px black;
     font-size: 1rem;
     display: flex;
     flex-direction: column;
@@ -455,7 +457,7 @@ main {
 	transform-style: preserve-3d;
 }
 
-.flip-container:hover .flipper{
+.flip-container:active .flipper{
 	transform: rotateY(180deg);
 }
 
@@ -475,7 +477,7 @@ main {
     width: 100%;
     height: 100%;        
     border: 4px solid darkgray;
-    background: linear-gradient(135deg, #729f3f, #00ffc8);
+    background: linear-gradient(135deg, #55ff00, #00d0ff);
     cursor: pointer;
 }
 
@@ -573,6 +575,88 @@ main {
     height: 20%;
 }
 
+#special-flip {
+    width: 277.5px;
+    height: 405px;
+}
+
+#special-card {
+    width: 277.5px;
+    height: 405px;
+}
+
+.grass-special-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid darkgray;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(124deg, #22ff00, #0091ff);
+    background-size: 1800% 1800%;
+   
+   -webkit-animation: rainbow 1s ease infinite;
+   -z-animation: rainbow 1s ease infinite;
+   -o-animation: rainbow 1s ease infinite;
+     animation: rainbow 1s ease infinite;}
+   
+   @-webkit-keyframes rainbow {
+       0%{background-position:0% 82%}
+       50%{background-position:100% 19%}
+       100%{background-position:0% 82%}
+   }
+   @-moz-keyframes rainbow {
+       0%{background-position:0% 82%}
+       50%{background-position:100% 19%}
+       100%{background-position:0% 82%}
+   }
+   @-o-keyframes rainbow {
+       0%{background-position:0% 82%}
+       50%{background-position:100% 19%}
+       100%{background-position:0% 82%}
+   }
+   @keyframes rainbow { 
+       0%{background-position:0% 82%}
+       50%{background-position:100% 19%}
+       100%{background-position:0% 82%}
+}
+
+.fire-special-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid darkgray;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(124deg, #ff0000, #ffea00);
+    background-size: 1800% 1800%;
+   
+   -webkit-animation: rainbow 1s ease infinite;
+   -z-animation: rainbow 1s ease infinite;
+   -o-animation: rainbow 1s ease infinite;
+     animation: rainbow 1s ease infinite;}
+   
+   @-webkit-keyframes rainbow {
+       0%{background-position:0% 82%}
+       50%{background-position:100% 19%}
+       100%{background-position:0% 82%}
+   }
+   @-moz-keyframes rainbow {
+       0%{background-position:0% 82%}
+       50%{background-position:100% 19%}
+       100%{background-position:0% 82%}
+   }
+   @-o-keyframes rainbow {
+       0%{background-position:0% 82%}
+       50%{background-position:100% 19%}
+       100%{background-position:0% 82%}
+   }
+   @keyframes rainbow { 
+       0%{background-position:0% 82%}
+       50%{background-position:100% 19%}
+       100%{background-position:0% 82%}
+}
+
 @media screen and (max-width: 800px) {
 
     .search-bar {
@@ -605,7 +689,6 @@ main {
     .main-content {
         row-gap: 1vh;
         column-gap: 1vw;
-        background-color: white;
     }
 
     .flip-container {
@@ -617,6 +700,17 @@ main {
     .card {
         width: 125px;
         height: 180px;
+    }
+
+    #special-flip {
+        width: 175px;
+        height: 245px;
+        perspective: 1000px;
+    }
+
+    #special-card {
+        width: 175px;
+        height: 245px;
     }
 
     .card p{
@@ -636,5 +730,9 @@ main {
 
     .copy {
         width: 100%;
+    }
+
+    .search-bar>img {
+        margin-top: 14px;
     }
 }
