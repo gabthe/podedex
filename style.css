@@ -24,19 +24,20 @@ header {
     display: flex;
     border: 1px solid black;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
-    height: 26vh;
+    height: min-content;
 }
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4px;
+    gap: 8px;
     flex-direction: row;
     border: 1px solid black;
     width: 100vw;
-    height: 16vh;
+    height: 6vh;
+    padding: 1vh 1vw;
     background-color: rgb(230, 230, 230);
 }
 
@@ -89,10 +90,8 @@ footer {
     text-align: center;
     justify-content: center;
     align-items: center;
-    height: min-content;
-    min-height: 55px;
-    width: min-content;
-    min-width: 80px;
+    height: 100%;
+    width: 100%;
     background-color: white;
     font-size: 0.8rem;
 }
@@ -233,16 +232,24 @@ nav>div {
     justify-content: space-between;
     gap: 1vw;
     flex-direction: row;
-    width: min-content;
+    width: 70%;
     padding: 1vw;
     color: white;
 }
 
-.search-bar>div>input {
-    width: 22vw;
+#search-bar-position{
+    display: flex;
+    height: min-content;
+}
+
+#search-bar-position input{
+    display: flex;
     height: 24px;
-    border-radius: 5px 5px;
-    border: 1px solid black;
+    max-width: 500px;
+    width: 70%;
+    margin-right: .5vw;
+    border-radius: 15px 15px;
+    padding: 4px 4px;
 }
 
 .menu {
@@ -262,6 +269,8 @@ nav>div {
     height: 100%;
     font-size: 1rem;
     padding: 1vw;
+    margin: 1vh 1vw;
+    text-align: center;
 }
 
 #search:hover {
@@ -269,14 +278,16 @@ nav>div {
     transition: 0.5s ease;    
 }
 
-.search-bar>img {
+#search-icon-img{
     border: 1px solid black;
     padding: 1px;
     background-color: yellow;
     border-radius: 5px 5px;
     width: 24px;
     height: 24px;
-    margin-top: 26.5px;
+}
+#search-icon-img:hover {
+    cursor: pointer;
 }
 
 #text-search {
@@ -676,7 +687,7 @@ main {
         min-width: 6vw;
     }
 
-    .selecao>button {
+    .selecao>a{
         width: 35px;
         height: 50px;
         font-size: 0.5rem;
@@ -734,5 +745,14 @@ main {
 
     .search-bar>img {
         margin-top: 14px;
+    }
+
+    #search-bar-position input{
+        height: 18px;
+    }
+
+    #search-icon-img {
+        height: 18px;
+        width: 18px;
     }
 }
