@@ -1,2 +1,2 @@
 # podedex
-Pokedex usando HTML, CSS e Javascript (e outros)
+Pokedex usando HTML e CSS
